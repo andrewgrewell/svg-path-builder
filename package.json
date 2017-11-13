@@ -1,6 +1,6 @@
 {
   "name": "svg-path-builder",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "build svg path data in a declarative way",
   "main": "dist/index.js",
   "scripts": {
@@ -24,9 +24,10 @@
     "url": "https://github.com/andrewgrewell/svg-path-builder/issues"
   },
   "homepage": "https://github.com/andrewgrewell/svg-path-builder#readme",
-  "dependencies": {
+  "devDependencies": {
     "babel-cli": "^6.24.0",
-    "babel-preset-es2015": "^6.24.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1"
-  }
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-preset-es2015": "^6.24.0"
+  },
+  "dependencies": {}
 }

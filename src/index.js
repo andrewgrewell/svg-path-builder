@@ -1,5 +1,5 @@
 
-const COMMAND_TYPES = { line: 'line', curve: 'curve', arch: 'arch' };
+const COMMAND_TYPES = { line: 'line', curve: 'curve', arc: 'arc' };
 const POSITION_MODES = { abs: 'absolute', rel: 'relative' };
 const COMMANDS = [
     {
@@ -38,6 +38,7 @@ class PathBuilder {
         this.closed = false;
         COMMANDS.forEach(({ type, key, name }) => {
             Object.defineProperty(this, name, {
+                enumerable: true,
                 value: this._getCommandProvider(type, key, name)
             })
         })
