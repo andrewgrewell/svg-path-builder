@@ -1,0 +1,32 @@
+{
+  "name": "svg-path-builder",
+  "version": "1.0.0",
+  "description": "build svg path data in a declarative way",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "npm run build:dist",
+    "build:dist": "rm -rf dist && babel src -d dist --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:andrewgrewell/svg-path-builder.git"
+  },
+  "keywords": [
+    "svg",
+    "path",
+    "declarative",
+    "build",
+    "path"
+  ],
+  "author": "Andrew Grewell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewgrewell/svg-path-builder/issues"
+  },
+  "homepage": "https://github.com/andrewgrewell/svg-path-builder#readme",
+  "dependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1"
+  }
+}

@@ -1,0 +1,10 @@
+node_modules
+yarn.lock
+.gitignore
+.expo
+.idea
+.flowconfig
+.watchmanconfig
+App.js
+app.json
+App.test.js
